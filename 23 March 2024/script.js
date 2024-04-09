@@ -30,11 +30,15 @@ const rahul=()=> console.log("Hello Rahul");
 rahul();
 
 //5 ==================================
-const add = (x,y)=>{
+// const add = (x,y)=>{
+//     return x + y;
+// }
+function add(x,y){
     return x + y;
 }
+add();
 console.log(add(3,4))
-
+document.getElementById("demo2").innerHTML = add(3,4);
 
 
 //6 ====================Value Dekstop pr print krna.

@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="demo"></h1>
     <script>
         //====================================Object=============================
         const person = {
@@ -17,6 +18,8 @@
         output = person.age;
         output = person.location;
         console.log(person);
+        document.getElementById("demo").innerHTML = person.name;
+
 
 // =============================Function===========================================
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <button onclick="stop()">Stop</button>
+    <script>
+     const mytimer = setTimeout(display,5000);
+     function display(){
+        document.getElementById("demo").innerHTML = "All the best for html ppt";
+     }
+     function stop(){
+        clearTimeout(mytimer);
+     }
+     let name = "john dow";
+    // <!-- <h1>Please Enter Value From 1 to 10 </h1>
+    // <h1 id="demo"></h1>
+    // <input type="text" id="myinput"/>
+    // <button onclick="validate()">Click Here</button>
+    // <script>
+    //     function validate(){
+    //         let x = document.getElementById("myinput").value;
+    //         let text;
+    //         if (isNaN(x) || x < 1 || x > 10){
+    //             text = "Input not valid";
+    //         }
+    //         else{
+    //             text = "Input valid";
+    //         }
+    //         document.getElementById("demo").innerHTML = text;
+    //     } -->
+    </script>
+</body>
+</html>

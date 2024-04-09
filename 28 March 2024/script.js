@@ -22,3 +22,8 @@ function result(){
     let y = document.getElementById("myinput").value;
     document.getElementById("demo").innerHTML = y;
 }
+
+function ram(){
+let r = document.getElementById("Shita").value;
+document.getElementById("demo2").innerHTML = r;
+}
