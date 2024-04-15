@@ -14,8 +14,8 @@ const name3=(num)=>{
     console.log("Hello"+ num);
 };
 name3("Johan");
-name3("Gread");
-name3("Lucky");
+// name3("Gread");
+// name3("Lucky");
 
 //3 =========================================
 const display = (fname,lname)=>{

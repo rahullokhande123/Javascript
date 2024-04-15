@@ -10,7 +10,7 @@ let lname = "Lokhande";
 document.getElementById("demo").innerHTML = "Hello" + " " + fname + " " + lname + " " + "Wellcome to cybrom";
 
 //------> In Backtics.
-document.getElementById("demo").innerHTML = `Hello ${fname},${lname}, "wellcome to cybrom"`;
+document.getElementById("demo").innerHTML = `Hello ${fname} ${lname}, wellcome to cybrom`;
 
 // ==================================================================
 
@@ -22,9 +22,9 @@ function display(){
     document.getElementById("demo2").innerHTML = `
         <table>
         <tr>
-        <th>Name</th>
-        <th>Course</th>
-        <th>City</th>
+        <td>Name</td>
+        <td>Course</td>
+        <td>City</td>
         </tr>
 
 

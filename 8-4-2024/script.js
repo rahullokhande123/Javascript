@@ -18,7 +18,7 @@ function stop(){
 }
 
 // ================================================
-const myinterval2 =  setTimeout(display1,500);
+const myinterval2 =  setTimeout(display1,5000);
 function display1(){
     document.getElementById("demo").innerHTML = "Hello Rahul";
 }
@@ -40,13 +40,7 @@ function stop4(){
 }
 
 // ====================================================
-const count = setInterval(count1,500);
-function count1(){
-    document.getElementById("demo3").innerHTML = 0;
-}
-function stop2(){
-    clearInterval(count);
-}
+
 /*====================================================*/
 const show = setInterval(lokhande,500);
 function lokhande(){

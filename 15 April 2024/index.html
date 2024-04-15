@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <h1 id="demo4"></h1>
+    <script>
+        //================== Loop-For In ===============================================
+         const person ={
+            fname: "Rahul",
+            lname: "Lokhande",
+            age: 23,
+            city: "Bhopal",
+         };
+         let text = "";
+         for(let x in person){
+            text += person[x] + "<br>";
+            console.log(person[x]);
+         }
+         document.getElementById("demo").innerHTML = text;
+         //================= Loop-For In(in Array) ============================
+         const arr = [1,2,3,10,30,50];
+         let text1 = "";
+         for (let x in arr){
+            text1 += arr[x] + "<br>";
+         }
+         document.getElementById("demo1").innerHTML = text1;
+         //============================== Loop-For Of ====================================
+        //  const ar = ["Marcedis","Maruti","Lamborghini","Nissan"];
+        //  let text2 = "";
+        //  for (let x of ar){
+        //     text2 += x + "<br>";
+        //  }
+
+         const ar = "jAVASCRIPT";
+         let text2 = "";
+         for (let x of ar){
+            text2 += x + "<br>";
+         }
+         document.getElementById("demo2").innerHTML = text2;
+
+         //====================== While Loop ===========================================
+
+         let text3 = "";
+         let i = 0;
+         while(i < 10){
+            text3 += i + "<br>";
+            i++;
+            console.log(i);
+         }
+         document.getElementById("demo3").innerHTML = text3;
+
+         //========================= Do While ==========================================
+         let text4 = "";
+         let b = 0;
+         do{
+            text4 += b;
+            b++;
+            console.log(b);
+         }
+         while(b < 10);
+         document.getElementById("demo4").innerHTML = text4;
+    </script>
+
+</body>
+</html>
