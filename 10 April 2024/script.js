@@ -11,7 +11,7 @@
 //     console.log("Work Harder")
 // }
 
-//================= Switch Statment =================
+//========================== Switch Statment ================================
 let day;
 const date = new Date();
 console.log(date.getMonth());
