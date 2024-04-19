@@ -21,6 +21,30 @@
 //============ random value ==========================
 // let x = Math.random();
 // let x = Math.random()*10; // *range no. pr ak range provide kr deta h
-let x = (Math.random()*10)+1;// es method se renge no. bhi aa sakta h
-console.log(x);
-document.getElementById("demo").innerHTML = x;
+
+
+
+
+// let x = (Math.random()*10)+1;// es method se renge no. bhi aa sakta h
+// console.log(x);
+// document.getElementById("demo").innerHTML = x;
+
+
+
+//======================================================================
+// const count = ()=>{
+//     let name= "Rahul";
+//     let lname= "Lokhande";
+//         console.log(name,lname);
+// };
+// count();
+// document.getElementById("demo2").innerHTML= `Hellow, ${name} ${lname} Wellcome To Cybrom`;
+//======================================================================
+let num;
+const show = ()=>{
+    if(num>10 && 100>num){
+        let num= (Math.random()*100)+1;
+        console.log(num);
+    }
+}
+document.getElementById("demo2").innerHTML = num;
