@@ -10,7 +10,7 @@
 // const y = new Date (99,6,7);
 // const y = new Date ("November 24, 2018 10:34:50");
 // const y = new Date (1000000000000);
-// const y = new Date (-1000000000000); // ager millisecond's ko - me denge to vo 1970 se - ki date time dega.
+// const y = new Date (-10000000000000); // ager millisecond's ko - me denge to vo 1970 se - ki date time dega.
 const y = new Date();
 // const z = y.getFullYear();
 const months = ['January','Feb','March','April','May','JUne','July','August','September','October','November','December'];
