@@ -1,6 +1,6 @@
 
 // ============= Rest Peramiter( Yaha Spret Peramiter Ka Part H) ===============
-// let display = function(... num1){
+// let display = function(...num1){
 //     console.log(num1);
 // };
 
@@ -21,21 +21,24 @@
 // console.log(a,b,c,d); // Pure Array KO Ak Variable me save krne ke liye 
 //======================================
 const myarray = [1,2,3,4,5,6];
-const [a,b,c,d,...num]=myarray;
+const [a,,b,c,d,...num]=myarray;
 console.log(a,b,c,d);
 console.log(num);
 
+let book=["Advance JS",200,150];
+let[name,price,publication]=book;
+console.log(book);
 //=============================================================
 
-const person ={
-    name: "johan",
-    id:1,
-    age: 23,
-};
-// First Method================
+// const person ={
+//     name: "johan",
+//     id:1,
+//     age: 23,
+// };
+// // First Method================
 // const {name,id,age} = person;
 // console.log(name,id,age);
 // Second Method ==============
-const {name: username,id: i,age:myage }= person;
-console.log(username,i,myage);
+// const {name: username,id: i,age:myage }= person;
+// console.log(username,i,myage);
 
