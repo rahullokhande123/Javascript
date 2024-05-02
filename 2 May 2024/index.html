@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #show img{
+            width: 600px;
+        }
+        #left{
+            position: absolute;
+            left: 30px;
+            top: 160px;
+            font-size: 25px;
+        }
+        #right{
+            position: absolute;
+            left: 550px;
+            top: 160px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <i id="left" onclick="slider('left')" class="fa-solid fa-chevron-left"></i>
+    <i id="right" onclick="slider('right')" class="fa-solid fa-chevron-right"></i>
+    <div id="show">
+        <img id="im" src="https://static.vecteezy.com/system/resources/previews/026/989/169/large_2x/hot-air-balloon-of-a-beautiful-transportation-with-futuristic-design-ai-generated-photo.jpg" alt="" >
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
