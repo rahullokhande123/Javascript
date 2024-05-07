@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h4 id="demo2"></h4>
+    <h2 id="demo3"></h2>
+    <script type="module">
+        import {name,age} from "./index.js";
+        import {student,subject} from "./main.js"; // Name Import Krne ki Mathod
+        import message from "./main.js";  // Default Modual Import Krne ka trika 
+        document.getElementById("demo3").innerHTML=`${message()}`;
+        document.getElementById("demo").innerHTML = ` My name is ${name} and I m ${age} years old`;
+        document.getElementById("demo2").innerHTML = ` Student name is ${student} and course ${subject} years old`;
+    </script>
+</body>
+</html>

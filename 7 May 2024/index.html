@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- =================== Change Color ==================== -->
+    <h2>Change Background Color</h2>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('black')">Black</button>
+    <button onclick="changeColor('orange')">Orange</button>
+    <button onclick="changeColor('red')">Red</button>
+
+    <!-- ================= Rendom Password =============== -->
+     <h1>Click on the button to generate random password</h1>
+     <button onclick="display()">Click Here</button>
+     <br />
+     <p id="demo"></p>
+
+
+<!-- =================== Replace ================== -->
+    <p id="originalText">
+        Welcome to Google Bhopal,we are google students lerarning JS in google.
+    </p>
+    <button onclick="replaceText()">Replace</button>
+
+
+    <script>
+        // =================== Change Color To Click Button ==================
+        function changeColor(Color){
+            document.body.style.backgroundColor = Color;
+        }
+        // =================== Genrate Rendom Password =================
+
+        function generateP(){
+            var pass = "";
+            var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#%$&";
+            for(let i=1;i<=8;i++){
+                var char = Math.floor(Math.random()* str.length+1);
+                pass += str.charAt(char);
+            }
+            return pass;
+        }
+        function display(){
+            document.getElementById("demo").innerHTML = generateP();
+        }
+        // ================= Replace ===================
+
+        function replaceText(){
+            var originalText = document.getElementById("originalText").innerHTML;
+            var replaceText = originalText.replace(/google/gi, "cybrom");
+            document.getElementById("originalText").innerHTML = replaceText;
+        }
+    </script>
+</body>
+</html>
