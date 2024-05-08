@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click Button To Change Color </h1>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('pink')">Pink</button>
+
+    <!-- ================================================ -->
+    <p id="demo">Welcome to Google Bhopal,we are google students lerarning JS in google.</p>
+    <button onclick="replaceText()">Replace</button>
+    <script>
+        function changeColor(Color){
+            document.body.style.backgroundColor=Color;
+        }
+
+        //==================================================
+        function replaceText(){
+        var originalText= document.getElementById("demo").innerHTML;
+        var replaceText=originalText.replace(/google/gi, "Cybrom");
+        console.log(replaceText);
+        document.getElementById("demo").innerHTML=replaceText;
+        }
+  
+    </script>
+</body>
+</html>
