@@ -1,0 +1,14 @@
+let or const,var
+dom,bom
+consol log
+functions-regular,arrow f();
+event lisner.2type(add event, onclick)
+geteliment by id quaryseletcter
+backticks-templet litral
+form validation
+set time out , set interval
+math,date,string ,array methods
+distructuring or sprad oprater
+moduls
+local storage
+slider 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#mypara").mouseenter(function () {
+            $(this).hide();
+        });
+            $("#mypara").mouseleave(function () {
+            $(this).show();
+        });
+
+        });
+
+// ====================== second Way =========================
+
+    $(document).ready(function () {
+
+    $("#mypara").hover(function () {
+    alert("You Enter Paragraf");
+      },
+      function(){
+    alert("You exited paragraph");
+      });
+
+      });
+
+//=============================================================
+
+      $(document).ready(function () {
+
+      $("#myinput").focus(function () {
+        $(this).css("background-color","yellow");
+      });
+      $("#myinput").blur(function () {
+        $(this).css("background-color","green");
+      });
+
+      });
+    
+    </script>
+</head>
+
+<body>
+    <p id="mypara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolores eos earum cumque quidem et quo
+        exercitationem laborum doloremque debitis. Ab pariatur doloribus repellendus esse vero quae modi et error.</p>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolores eos earum cumque quidem et quo
+            exercitationem laborum doloremque debitis. Ab pariatur doloribus repellendus esse vero quae modi et error.</p>
+    <p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolores eos earum cumque quidem et quo
+                exercitationem laborum doloremque debitis. Ab pariatur doloribus repellendus esse vero quae modi et error.</p>
+    <button>click</button>
+    <input type="text" id="myinput"/>
+
+</body>
+
+</html>

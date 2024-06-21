@@ -26,6 +26,13 @@
             margin: 10px;
         }
     </style>
+    <script>
+        function mydel(){
+            let str = document.getElementById('txt').value;
+            let ans = str.substring(0, str.length -1);
+            document.getElementById('txt').value =ans;
+        }
+    </script>
 </head>
 <body>
     <div id="box">
@@ -45,6 +52,9 @@
         <button onclick="document.getElementById('txt').value += document.getElementById('btnmulti').value" id="btnmulti" value="*">*</button>
         <button onclick="document.getElementById('txt').value += document.getElementById('btndivide').value" id="btndivide" value="/">/</button>
         <button onclick="document.getElementById('txt').value = eval(document.getElementById('txt').value)">=</button>
+        <button onclick="document.getElementById('txt').value += document.getElementById('btndot').value" id="btndot" value=".">.</button>
+        <button onclick="document.getElementById('txt').value = document.getElementById('btnclear').value" value=" " id="btnclear">Clear</button>
+        <button onclick="mydel()" value="X" id="btndel">X</button>
         
     </div>
 </body>
